@@ -1,0 +1,10 @@
+<template name="MainLayout">
+    <header>
+        <h1>My Recipe Book</h1>
+        {{> loginButtons}}
+    </header>
+    <main>
+        <!-- Dynamic template to render multiple templates separately on the main page -->
+        {{> Template.dynamic template=main}}
+    </main>
+</template> 
